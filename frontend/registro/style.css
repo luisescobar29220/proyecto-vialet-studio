@@ -1,0 +1,120 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario de registro */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.register-box {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+/* Estilos para los campos de entrada */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #5c6bc0;
+}
+
+/* Estilo del botón */
+.input-group button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+    background-color: #3f4a87;
+}
+
+/* Mensaje de error */
+.message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Estilo para el enlace de iniciar sesión */
+.login-link {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #5c6bc0;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el mensaje de éxito */
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}

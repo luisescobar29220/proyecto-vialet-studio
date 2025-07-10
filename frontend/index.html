@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel - Vailet Nails Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cabezera/style.css">
+</head>
+<body>
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <div class="toolbar-left">
+            <img src="/imagen/logo.png" alt="Logo Vailet Nails Studio" class="logo">
+        </div>
+        <div class="toolbar-center">
+            <ul class="toolbar-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/contacto/contacto.html">Contacto</a></li>
+                <li><a href="/servicios/servicios.html">Servicios</a></li>
+                <li><a href="/reservas/reservas.html">Reservas</a></li>
+            </ul>
+        </div>
+        <div class="toolbar-right">
+            <span class="material-icons user-icon" id="userIcon">account_circle</span>
+            <a href="/login/login.html" class="user-link" id="userAccountLink">Mi Cuenta</a>
+            <!-- Menú de Cerrar Sesión -->
+            <div class="logout-menu" id="logoutMenu">
+                <a href="#" id="logoutButton">Cerrar sesión</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Carrusel de Cards -->
+    <div id="cardCarrusel" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Fila de 3 Cards: Primer Conjunto -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/imagen/1.png" class="card-img-top" alt="Servicio 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Retoques</h5>
+                                <p class="card-text">Dale nueva vida a tus uñas con nuestros retoques personalizados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/imagen/2.png" class="card-img-top" alt="Servicio 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Uñas Acrílica</h5>
+                                <p class="card-text">Elegancia y resistencia con nuestras uñas acrílicas de alta calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/imagen/3.png" class="card-img-top" alt="Servicio 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Rubber</h5>
+                                <p class="card-text">Protección y durabilidad con el mejor acabado en gel rubber.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila de 3 Cards: Segundo Conjunto -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/imagen/4.png" class="card-img-top" alt="Servicio 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Uñas Esculpidas</h5>
+                                <p class="card-text">Arte y diseño exclusivo en nuestras uñas esculpidas a tu medida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/imagen/5.png" class="card-img-top" alt="Servicio 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Manicura en Gel</h5>
+                                <p class="card-text">Un toque de glamour y color con nuestra manicura en gel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/imagen/6.png" class="card-img-top" alt="Servicio 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Spa de Manos</h5>
+                                <p class="card-text">Relajación y cuidado premium para tus manos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles del Carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cardCarrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+     <!-- Sección de Ofertas -->
+     <div class="container mt-5">
+        <h2 class="text-center">Ofertas</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 position-relative">
+                <img src="/imagen/oferta1.png" class="img-fluid rounded" alt="Oferta 1">
+                <div class="position-absolute top-50 start-50 translate-middle bg-dark text-white p-2 rounded">
+                    Oferta del 20% En Uñas Acrilicas
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <img src="/imagen/oferta2.png" class="img-fluid rounded" alt="Oferta 2">
+                <div class="position-absolute top-50 start-50 translate-middle bg-dark text-white p-2 rounded">
+                    Oferta del 30% En Uñas Esculpidas
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <img src="/imagen/oferta3.png" class="img-fluid rounded" alt="Oferta 3">
+                <div class="position-absolute top-50 start-50 translate-middle bg-dark text-white p-2 rounded">
+                    Oferta del 40% En Retoques
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="mt-5">
+        <p>&copy; 2024 Vailet Nails Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/cabezera/script.js"></script>
+</body>
+</html>
